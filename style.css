@@ -680,6 +680,107 @@ section { padding: 6rem 4rem; }
   color: var(--accent);
 }
 
+/* COLOR PALETTE */
+
+.palette-visual{
+  padding:1rem;
+}
+
+.palette-header{
+  height:40px;
+  border:3px solid var(--border);
+  margin-bottom:1rem;
+  background:rgba(24,32,24,.9);
+}
+
+.palette-colors{
+  display:flex;
+  height:130px;
+  border:3px solid var(--border);
+}
+
+.palette-colors span{
+  flex:1;
+}
+
+.palette-colors span:nth-child(1){
+  background:#6fbf44;
+}
+
+.palette-colors span:nth-child(2){
+  background:#8fd7ff;
+}
+
+.palette-colors span:nth-child(3){
+  background:#b98245;
+}
+
+.palette-colors span:nth-child(4){
+  background:#7a4b2a;
+}
+
+.palette-colors span:nth-child(5){
+  background:#f5f1d8;
+}
+
+
+/* EXPENSE TRACKER */
+
+.expense-visual{
+  padding:1rem;
+}
+
+.expense-top{
+  height:55px;
+  border:3px solid rgba(143,215,255,.3);
+  margin-bottom:1rem;
+  background:
+  linear-gradient(
+    135deg,
+    rgba(143,215,255,.25),
+    rgba(24,32,24,.8)
+  );
+}
+
+.expense-chart{
+  display:flex;
+  align-items:flex-end;
+  gap:.8rem;
+  height:90px;
+  margin-bottom:1rem;
+}
+
+.expense-chart span{
+  flex:1;
+  background:var(--accent);
+}
+
+.expense-chart span:nth-child(1){
+  height:40%;
+}
+
+.expense-chart span:nth-child(2){
+  height:75%;
+}
+
+.expense-chart span:nth-child(3){
+  height:55%;
+}
+
+.expense-chart span:nth-child(4){
+  height:90%;
+}
+
+.expense-list{
+  display:flex;
+  flex-direction:column;
+  gap:.6rem;
+}
+
+.expense-list div{
+  height:12px;
+  background:rgba(255,255,255,.12);
+}
 
 /* ─── CONTACT ─── */
 #contact { border-top: 1px solid var(--border); }
