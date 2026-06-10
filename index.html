@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
   <!-- NAV -->
   <nav>
     <a href="#hero" class="nav-logo">JGP_</a>
@@ -21,16 +22,56 @@
   <!-- HERO -->
   <section id="hero">
     <div class="hero-bg-text">JGP</div>
-    <div class="hero-tag">// Available for opportunities</div>
-    <h1 class="hero-name">Jonas<br>Geovani<br><span>Putra.</span></h1>
-    <p class="hero-sub">Frontend Developer focused on building clean, responsive, and user-centered web experiences with modern web technologies..</p>
-    <div class="hero-cta">
-      <a href="#projects" class="btn btn-primary">My Projects</a>
-      <a href="#contact" class="btn btn-outline">Contact Me</a>
-    </div>
-    <div class="hero-scroll">
-      <span>Scroll</span>
-      <div class="scroll-line"></div>
+
+    <div class="hero-content-row">
+      <!-- LEFT: Text -->
+      <div class="hero-left">
+        <div class="hero-tag">// Available for opportunities</div>
+        <h1 class="hero-name">Jonas<br>Geovani<br><span>Putra.</span></h1>
+        <p class="hero-sub">Frontend Developer focused on building clean, responsive, and user-centered web experiences with modern web technologies.</p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">My Projects</a>
+          <a href="#contact" class="btn btn-outline">Contact Me</a>
+        </div>
+       
+      </div>
+
+      <!-- RIGHT: Photo Placeholder + Stardew elements -->
+      <div class="hero-photo-wrap">
+        <div class="hero-photo-frame">
+          <div class="hero-photo-inner">
+            <!-- Floating Stardew items -->
+            <div class="photo-items">
+              <span class="photo-item">🌟</span>
+              <span class="photo-item">🌾</span>
+              <span class="photo-item">💎</span>
+              <span class="photo-item">🍓</span>
+              <span class="photo-item">⚗️</span>
+            </div>
+            <!-- Pixel silhouette -->
+            <div class="photo-silhouette"></div>
+            <div class="photo-label">[ YOUR PHOTO ]<br>Transparent BG</div>
+          </div>
+        </div>
+
+        <!-- XP / Level bar -->
+        <div class="hero-xp-bar-wrap">
+          <div class="xp-label">
+            <span>⚔ LVL 1 · DEVELOPER</span>
+            <span>XP 38%</span>
+          </div>
+          <div class="xp-bar">
+            <div class="xp-fill"></div>
+          </div>
+        </div>
+
+        <!-- Stardew badge row -->
+        <div class="stardew-badges">
+          <span class="sdv-badge">🌱 Beginner</span>
+          <span class="sdv-badge">⭐ Ambitious</span>
+          <span class="sdv-badge">🎮 Builder</span>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -89,17 +130,15 @@
     </div>
 
     <div class="projects-grid reveal">
+
+      <!-- CARD 1 -->
       <article class="project-card">
         <div class="project-visual quiz-visual" aria-hidden="true">
-          <div class="visual-topbar">
-            <span></span><span></span><span></span>
-          </div>
+          <div class="visual-topbar"><span></span><span></span><span></span></div>
           <div class="quiz-box">
             <span class="quiz-pill">Timer 00:25</span>
             <strong>Hello World</strong>
-            <div class="quiz-options">
-              <span></span><span></span><span></span>
-            </div>
+            <div class="quiz-options"><span></span><span></span><span></span></div>
           </div>
         </div>
         <div class="project-content">
@@ -115,26 +154,21 @@
             <span class="tag">JavaScript</span>
           </div>
           <div class="project-links">
-            <a class="project-link" href="#contact">Discuss Project</a>
-            <a class="project-link" href="#hero">Back to Top</a>
+            <a class="project-link link-discuss" href="#contact">Discuss Project</a>
+            <a class="project-link link-top" href="#hero">Back to Top</a>
           </div>
         </div>
-
       </article>
 
+      <!-- CARD 2 (Featured) -->
       <article class="project-card project-card-featured">
         <div class="project-visual dashboard-visual" aria-hidden="true">
-          <div class="dashboard-sidebar">
-            <span></span><span></span><span></span>
-          </div>
+          <div class="dashboard-sidebar"><span></span><span></span><span></span></div>
           <div class="dashboard-main">
             <div class="dash-greeting"></div>
-            <div class="dash-grid">
-              <span></span><span></span><span></span><span></span>
-            </div>
+            <div class="dash-grid"><span></span><span></span><span></span><span></span></div>
           </div>
         </div>
-
         <div class="project-content">
           <div class="project-meta">
             <span class="project-num">02</span>
@@ -148,99 +182,68 @@
             <span class="tag">JavaScript</span>
           </div>
           <div class="project-links">
-            <a class="project-link" href="#contact">Discuss Project</a>
-            <a class="project-link" href="#hero">Back to Top</a>
+            <a class="project-link link-discuss" href="#contact">Discuss Project</a>
+            <a class="project-link link-top" href="#hero">Back to Top</a>
           </div>
         </div>
-
-        
       </article>
 
+      <!-- CARD 3 -->
       <article class="project-card">
+        <div class="project-visual palette-visual" aria-hidden="true">
+          <div class="palette-header"></div>
+          <div class="palette-colors">
+            <span></span><span></span><span></span><span></span><span></span>
+          </div>
+        </div>
+        <div class="project-content">
+          <div class="project-meta">
+            <span class="project-num">03</span>
+            <span>Design utility</span>
+          </div>
+          <h3 class="project-title">Color Palette Generator</h3>
+          <p class="project-desc">A web-based tool for generating visually balanced color palettes and streamlining design workflows through instant color selection and copy functionality.</p>
+          <div class="project-tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+          </div>
+          <div class="project-links">
+            <a class="project-link link-discuss" href="#contact">Discuss Project</a>
+            <a class="project-link link-top" href="#hero">Back to Top</a>
+          </div>
+        </div>
+      </article>
 
-  <div class="project-visual palette-visual" aria-hidden="true">
-    <div class="palette-header"></div>
-    <div class="palette-colors">
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-  </div>
-
-  <div class="project-content">
-    <div class="project-meta">
-      <span class="project-num">03</span>
-      <span>Design utility</span>
-    </div>
-
-    <h3 class="project-title">Color Palette Generator</h3>
-
-    <p class="project-desc">
-      A web-based tool for generating visually balanced color palettes and streamlining design workflows through instant color selection and copy functionality.
-    </p>
-
-    <div class="project-tags">
-      <span class="tag">HTML</span>
-      <span class="tag">CSS</span>
-      <span class="tag">JavaScript</span>
-    </div>
-
-    <div class="project-links">
-      <a class="project-link" href="#contact">Discuss Project</a>
-      <a class="project-link" href="#hero">Back to Top</a>
-    </div>
-  </div>
-
-</article>
-
-<article class="project-card">
-
-  <div class="project-visual expense-visual" aria-hidden="true">
-
-    <div class="expense-top"></div>
-
-    <div class="expense-chart">
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-
-    <div class="expense-list">
-      <div></div>
-      <div></div>
-      <div></div>
-    </div>
-
-  </div>
-
-  <div class="project-content">
-    <div class="project-meta">
-      <span class="project-num">04</span>
-      <span>Finance Application</span>
-    </div>
-
-    <h3 class="project-title">Expense Tracker</h3>
-
-    <p class="project-desc">
-    A personal finance tracking application that enables users to record transactions, monitor spending habits, and gain better visibility into financial activity.
-    </p>
-
-    <div class="project-tags">
-      <span class="tag">HTML</span>
-      <span class="tag">CSS</span>
-      <span class="tag">JavaScript</span>
-    </div>
-
-    <div class="project-links">
-      <a class="project-link" href="#contact">Discuss Project</a>
-      <a class="project-link" href="#hero">Back to Top</a>
-    </div>
-  </div>
-
-</article>
+      <!-- CARD 4 -->
+      <article class="project-card">
+        <div class="project-visual expense-visual" aria-hidden="true">
+          <div class="expense-top"></div>
+          <div class="expense-chart">
+            <span></span><span></span><span></span><span></span>
+          </div>
+          <div class="expense-list">
+            <div></div><div></div><div></div>
+          </div>
+        </div>
+        <div class="project-content">
+          <div class="project-meta">
+            <span class="project-num">04</span>
+            <span>Finance Application</span>
+          </div>
+          <h3 class="project-title">Expense Tracker</h3>
+          <p class="project-desc">A personal finance tracking application that enables users to record transactions, monitor spending habits, and gain better visibility into financial activity.</p>
+          <div class="project-tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+          </div>
+          <div class="project-links">
+            <a class="project-link link-discuss" href="#contact">Discuss Project</a>
+            <a class="project-link link-top" href="#hero">Back to Top</a>
+          </div>
+        </div>
+      </article>
 
     </div>
   </section>
@@ -251,7 +254,7 @@
     <div class="contact-inner">
       <div class="reveal">
         <h2 class="contact-big">Let's Build<br><span>Something Great.</span></h2>
-        <p class="contact-note">Interested in collaboration, <br>freelance opportunities, or discussing new ideas?<br><br>Feel free to reach out. <br> I'm always open to connecting with developers, designers, and ambitious teams.</p>
+        <p class="contact-note">Interested in collaboration,<br>freelance opportunities, or discussing new ideas?<br><br>Feel free to reach out.<br>I'm always open to connecting with developers, designers, and ambitious teams.</p>
       </div>
       <div class="contact-form reveal">
         <div class="form-group">
@@ -271,7 +274,7 @@
     </div>
   </section>
 
-  <!-- FOOTER -->
+   <!-- FOOTER -->
   <footer>
     <span class="footer-copy">© 2026 Jonas Geovani Putra - All rights reserved.</span>
     <div class="footer-socials">
