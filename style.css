@@ -84,7 +84,7 @@ nav {
   justify-content: space-between;
   padding: 1.4rem 4rem;
   background: rgba(16, 21, 16, 0.92);
-  backdrop-filter: blur(8px);
+  backdrop-filter: blur(1px);
   border-bottom: 4px solid var(--border);
   box-shadow: 0 4px 0 rgba(0, 0, 0, 0.55);
 }
@@ -580,9 +580,7 @@ section { padding: 6rem 4rem; }
 /* ─── PROJECTS ─── */
 #projects {
   border-top: 1px solid var(--border);
-  background:
-    linear-gradient(135deg, rgba(66, 146, 198, 0.08), transparent 34%),
-    var(--bg2);
+ 
 }
 
 .projects-grid {
