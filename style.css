@@ -578,6 +578,7 @@ section { padding: 6rem 4rem; }
 }
 
 /* ─── PROJECTS ─── */
+
 #projects {
   border-top: 1px solid var(--border);
  
@@ -652,6 +653,103 @@ section { padding: 6rem 4rem; }
   letter-spacing: 0;
 }
 
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+  /* PROJECT HEADER */
+    .projects-head {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .projects-intro {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    max-width: 100%;
+  }
+
+  /* PROJECT CARD 1 KOLOM */
+  #projects .projects-grid {
+    display: grid;
+    grid-template-columns: 1fr !important;
+  }
+
+
+  /* CARD LEBIH KECIL */
+  #projects .project-card {
+     min-width: 0;
+    width: 100%;
+  }
+
+  /* PREVIEW DIPERKECIL */
+  .project-visual {
+    height: 160px;
+    margin: 0.8rem;
+  }
+
+  /* CONTENT */
+  .project-content {
+    padding: 1rem;
+  }
+
+  .project-meta {
+    font-size: 0.7rem;
+  }
+
+  #projects .project-title {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+
+  #projects .project-desc {
+    font-size: 0.85rem;
+    line-height: 1.6;
+  }
+
+  #projects .tag {
+    font-size: 0.7rem;
+    padding: 0.25rem 0.5rem;
+  }
+
+  #projects .project-link {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .project-visual {
+    height: 130px;
+  }
+
+  #projects .project-title {
+    font-size: 0.9rem;
+  }
+
+  #projects .project-desc {
+    font-size: 0.75rem;
+  }
+
+  .project-meta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.3rem;
+  }
+
+  .project-links {
+    flex-direction: column;
+  }
+
+  .project-link {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
 /* ===== PROJECT LINK BUTTONS ===== */
 .project-links { display: flex; gap: 0.8rem; flex-wrap: wrap; }
 
@@ -724,7 +822,7 @@ section { padding: 6rem 4rem; }
 
 .projects-head {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(260px, 430px);
+ 
   gap: 2rem;
   align-items: end;
   margin-bottom: 3rem;
